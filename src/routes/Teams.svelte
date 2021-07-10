@@ -1,7 +1,6 @@
 <script>
   import { Datatable, rows } from 'svelte-simple-datatables';
 
-  import dataUtil from '../utils/dataUtil';
   import {playerKeys} from '../lookups/playerMapping';
   import {teamKeys} from '../lookups/teamMapping';
 
@@ -46,4 +45,5 @@ td{text-align:center;padding:4px 0}
       </tbody>
     </Datatable>
   {/await}
-</div>
+</div> 
+
