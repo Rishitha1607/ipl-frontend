@@ -7,25 +7,16 @@
   let password;
 
   async function onSubmit() {
-    let response = await fetch('http://localhost:4000/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        username,
-        password,
-      }),
-    });
+    
 
-    let {type} = await response.json();
+    let {type} = "admin";
 
-    userStore.update(user => ({
+    userStore.subscribe(userStore => ({
       username,
       password,
       type
     }));
-    
+    console.log(userStore);
     if(type === 'USER') {
       replace('/');
     } else {
