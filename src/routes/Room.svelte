@@ -11,7 +11,7 @@
 
   import  { currentbidplayerid }  from '../stores/currentbid';
 
-  import dataUtil from '../utils/dataUtil';
+ 
 
   import {userStore} from '../stores/user';
 
@@ -142,7 +142,7 @@ onDestroy(unsubscribe);
         {/each}
       </ul>
       <div class="d-flex justify-center align-center">
-        <img src="/favicon.png"/>
+        <img src="/favicon.png" alt=".."/>
       </div>
     </div>
   {:catch error}
