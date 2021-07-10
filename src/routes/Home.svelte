@@ -1,7 +1,6 @@
 <script>
   import { Datatable, rows } from 'svelte-simple-datatables';
 
-  import dataUtil from '../utils/dataUtil';
   import {playerKeys} from '../lookups/playerMapping';
 
   import {keyToLabel} from '../utils/playerUtil';
